@@ -1,0 +1,21 @@
+//Recursion//
+
+
+package recursion;
+
+import java.util.Scanner;
+
+public class Recursion {
+
+   
+    public static void main(String[] args) {
+        int sum = 0;
+        int input;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the number : ");
+        input = scan.nextInt();
+        for (int i = 0; i <= input; sum += i++);
+        System.out.println("Summation of " + input + " = " + sum);
+    }
+    
+}
