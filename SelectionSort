@@ -1,0 +1,30 @@
+
+package selectionsort;
+
+
+public class SelectionSort {
+
+    
+    public static void main(String[] args) {
+        final int[] arrays = {4, 8, 1, 5, 3};
+        int min;
+        for (int x = 0; x < arrays.length; x++) {
+
+            min = x;
+            for (int z = x + 1; z < arrays.length; z++) {
+                if (arrays[z] < arrays[min]) {
+                    min = z;
+
+                }
+            }
+            if (min != x) {
+                final int temp = arrays[x];
+                arrays[x] = arrays[min];
+                arrays[min] = temp;
+            }
+            System.out.println(arrays[x]);
+        }
+    }
+}
+    
+
